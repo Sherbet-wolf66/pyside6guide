@@ -32,7 +32,7 @@ class MainWindow(QMainWindow):
 
         # TODO: add a push button to greet user
         submit_button = QPushButton("Submit")
-        submit_button.clicked.
+        submit_button.clicked.connect(self.get_input)
 
 
         # TODO: add a label to greet user
