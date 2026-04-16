@@ -70,10 +70,10 @@ class MainWindow(QMainWindow):
         #did user enter name?
         #If not, warn them to enter a name
         if not name:
-            output = "Warning: you did not enter your name. Please enter "
-            output = "your name."
+            output = "Warning: you did not enter your name. Please enter your name."
+            #output = "your name."
         else:
-           output = "You entered {name} as your name"
+           output = "You entered " + (name) + " as your name"
 
         #otherwise, display name
         self.output_label.setText(output)
